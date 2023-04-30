@@ -38,12 +38,14 @@ export const App = () => {
        </Section>
       React homework goit-react-hw-04-feedback
       <Section title="Statistics">
-        <p>{good}</p>
-        <p>{neutral}</p>
-        <p>{bad}</p>
-
         { summ ?
-          (<p>{good / summ}</p>):(
+          (<Statistics
+                good={good}
+                neutral={neutral}
+                bad={bad}
+                total={summ}
+                positivePercentage={good/neutral}
+              />):(
             <>
                 <Notification message="There is no feedback" />
             </>
