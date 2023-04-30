@@ -3,6 +3,8 @@ import Statistics from './statistics';
 import FeedbackOptions from './feedbackoptions';
 import Notification from './notification';
 import Section from './section';
+
+const appStyles = {}
 export class App extends Component {
   state = {
     good: 0,
