@@ -31,7 +31,14 @@ export const App = () => {
     <div
       style={appStyles}
     >
+      <Section title="Please leave feedback">
+
+      </Section>
       React homework goit-react-hw-04-feedback
+      <Section title="Statistics">
+
+        
+      </Section>
     </div>
   );
 };
